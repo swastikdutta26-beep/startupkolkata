@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101828">
+  <meta name="description" content="Startup Kolkata — a starting point for ideas, founders, and the next generation of businesses in Kolkata.">
+  <title>Startup Kolkata — Ideas into Impact</title>
+  <style>
+    :root{--ink:#101828;--muted:#667085;--paper:#f8fafc;--white:#fff;--orange:#ff6b35;--violet:#7257ff;--line:#e6eaf0;--mint:#d8f7e8}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:5;background:rgba(248,250,252,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(230,234,240,.85)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:-.04em;font-size:1.15rem}
+    .mark{width:38px;height:38px;border-radius:13px;background:var(--ink);display:grid;place-items:center;color:white;font-size:19px;box-shadow:0 7px 16px #10182820}
+    .navlinks{display:flex;gap:26px;color:#475467;font-size:.93rem}.navlinks a:hover{color:var(--orange)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;background:var(--ink);color:white;font-weight:700;font-size:.94rem;border:1px solid var(--ink);transition:transform .18s,box-shadow .18s;cursor:pointer}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 9px 22px #10182820}.btn.light{background:white;color:var(--ink);border-color:var(--line)}
+    .hero{padding:82px 0 68px;overflow:hidden;background:radial-gradient(ellipse at 85% 18%,#ffe4d8 0,transparent 31%),radial-gradient(ellipse at 5% 95%,#e7e3ff 0,transparent 30%)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid #f3cbbd;background:#fff7f3;color:#9b3d1c;padding:7px 12px;border-radius:999px;font-size:.8rem;font-weight:750;letter-spacing:.03em}
+    .dot{height:7px;width:7px;border-radius:50%;background:var(--orange)}h1{font-size:clamp(3rem,6vw,5.4rem);line-height:.99;letter-spacing:-.075em;margin:24px 0 22px;max-width:700px}h1 span{color:var(--orange)}.lead{font-size:1.15rem;color:#475467;max-width:570px;line-height:1.75}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .note{font-size:.82rem;color:var(--muted);margin-top:18px}.visual{position:relative;min-height:420px;display:grid;place-items:center}
+    .orb{width:min(350px,80vw);aspect-ratio:1;border-radius:34% 66% 58% 42% / 44% 38% 62% 56%;background:linear-gradient(145deg,#ff9b70,#ff623e 55%,#7257ff);transform:rotate(-8deg);position:absolute;box-shadow:0 28px 70px #ff6b3530}
+    .orbit{position:absolute;width:390px;height:390px;border:1px dashed #a9a3f5;border-radius:50%;transform:rotate(20deg)}.float-card{position:absolute;background:#fff;border:1px solid #ffffffb0;box-shadow:0 18px 55px #10182820;border-radius:18px;padding:17px 19px;min-width:178px}
+    .float-card strong{display:block;font-size:1.05rem}.float-card small{color:var(--muted)}.fc1{top:48px;right:0}.fc2{bottom:45px;left:-5px}.fc3{bottom:15px;right:15px;background:var(--ink);color:white}.fc3 small{color:#cbd5e1}
+    .spark{position:absolute;font-size:2rem;color:white}.s1{top:20%;left:24%}.s2{right:25%;bottom:22%;font-size:2.5rem}
+    section{padding:82px 0}.section-head{max-width:670px;margin-bottom:35px}.kicker{text-transform:uppercase;font-weight:800;letter-spacing:.13em;font-size:.75rem;color:var(--orange)}h2{font-size:clamp(2rem,4vw,3.1rem);letter-spacing:-.055em;line-height:1.1;margin:12px 0 15px}.sub{color:var(--muted);font-size:1.04rem}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:22px;padding:26px;min-height:230px}.iconbox{height:47px;width:47px;border-radius:15px;background:#fff0e9;display:grid;place-items:center;font-size:1.35rem;margin-bottom:20px}.card:nth-child(2) .iconbox{background:#eeebff}.card:nth-child(3) .iconbox{background:#dff8eb}.card h3{margin:0 0 9px;font-size:1.16rem;letter-spacing:-.025em}.card p{color:var(--muted);margin:0;font-size:.95rem}
+    .band{background:var(--ink);color:white;border-radius:28px;padding:44px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}.band p{color:#cbd5e1;max-width:600px;margin:0}.band h2{margin-top:0}.band .btn{background:var(--orange);border-color:var(--orange)}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.step{border-top:2px solid var(--line);padding-top:20px}.num{font-size:.82rem;color:var(--orange);font-weight:850;letter-spacing:.1em}.step h3{margin:10px 0 7px}.step p{margin:0;color:var(--muted)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.quote{background:var(--mint);border-radius:25px;padding:35px;font-size:1.35rem;font-weight:750;letter-spacing:-.03em;line-height:1.45}.quote small{display:block;margin-top:20px;font-size:.85rem;font-weight:500;color:#456958;letter-spacing:0}
+    footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .mobile-menu{display:none}
+    @media(max-width:800px){.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding-top:55px}.visual{min-height:360px}.orbit{width:310px;height:310px}.orb{width:275px}.fc1{right:0;top:20px}.fc2{left:0;bottom:30px}.fc3{right:0;bottom:4px}.cards,.steps{grid-template-columns:1fr}.band{grid-template-columns:1fr;padding:30px}.navlinks{gap:13px}.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}}
+    @media(max-width:480px){.wrap{width:min(100% - 28px,1120px)}.nav{height:66px}.nav .btn{padding:9px 11px;font-size:.82rem}.brand{font-size:1rem}.mark{height:33px;width:33px}.hero{padding:43px 0}.visual{min-height:320px}.orbit{width:270px;height:270px}.orb{width:235px}.float-card{padding:12px 14px;min-width:145px}.fc1{right:-2px}.fc2{left:-2px}.fc3{right:-2px}.float-card strong{font-size:.92rem}section{padding:60px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Startup Kolkata home"><span class="mark">S</span><span>startup<span style="color:#ff6b35">kolkata</span></span></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#mission">Our mission</a><a href="#focus">What we do</a><a href="#path">Get started</a></nav>
+    <a class="btn" href="#path">Explore ideas ↗</a>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> BUILT FOR BIG IDEAS IN KOLKATA</div>
+        <h1>Good ideas deserve a <span>starting point.</span></h1>
+        <p class="lead">Startup Kolkata is a concept for connecting ambitious thinkers with the knowledge, community, and practical resources to take their next step.</p>
+        <div class="actions"><a class="btn" href="#focus">Explore the vision ↗</a><a class="btn light" href="#mission">Why we exist</a></div>
+        <p class="note">A starting point for founders, builders, students, and curious minds.</p>
+      </div>
+      <div class="visual" aria-label="Abstract illustration representing ideas and growth">
+        <div class="orbit"></div><div class="orb"></div><span class="spark s1">✦</span><span class="spark s2">✳</span>
+        <div class="float-card fc1"><strong>Think boldly.</strong><small>Start with a question.</small></div>
+        <div class="float-card fc2"><strong>Build together.</strong><small>Make progress, step by step.</small></div>
+        <div class="float-card fc3"><strong>Ideas → Impact</strong><small>One step at a time.</small></div>
+      </div>
+    </div>
+  </section>
+  <section id="mission">
+    <div class="wrap about-grid">
+      <div>
+        <div class="kicker">The mission</div>
+        <h2>Make the first step feel possible.</h2>
+        <p class="sub">Starting something new can feel complicated. Startup Kolkata is imagined as an accessible launchpad where people can explore entrepreneurship, learn the basics, meet collaborators, and turn early ideas into thoughtful plans.</p>
+      </div>
+      <div class="quote">“You don't need every answer to begin. You need a clear next step.”<small>Startup Kolkata · Our guiding idea</small></div>
+    </div>
+  </section>
+  <section id="focus" style="background:#fff">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">What we're about</div><h2>A practical starting point for your next big idea.</h2><p class="sub">A proposed focus for a founder-friendly platform rooted in Kolkata's creative energy.</p></div>
+      <div class="cards">
+        <article class="card"><div class="iconbox">💡</div><h3>Explore ideas</h3><p>Turn a rough thought into a problem worth solving, with simple frameworks and useful questions.</p></article>
+        <article class="card"><div class="iconbox">🧭</div><h3>Learn the basics</h3><p>Understand customer research, business models, early planning, and the realities of building something new.</p></article>
+        <article class="card"><div class="iconbox">🤝</div><h3>Find your people</h3><p>Discover ways to connect with potential collaborators, mentors, and fellow builders as the community grows.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="path">
+    <div class="wrap">
+      <div class="band">
+        <div><div class="kicker" style="color:#ffad91">Your next step</div><h2>Start small. Stay curious.</h2><p>Have an idea? Write down the problem, who experiences it, and one thing you can do this week to learn more.</p></div>
+        <a class="btn" href="#mission">Explore the mission ↗</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">A simple path</div><h2>From thought to first step.</h2></div>
+      <div class="steps">
+        <div class="step"><div class="num">STEP 01</div><h3>Notice a problem</h3><p>Look for something people need, struggle with, or wish worked better.</p></div>
+        <div class="step"><div class="num">STEP 02</div><h3>Talk to people</h3><p>Ask questions, listen carefully, and check whether the problem is real.</p></div>
+        <div class="step"><div class="num">STEP 03</div><h3>Try a small solution</h3><p>Build the simplest useful version and learn from what happens next.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap foot"><a class="brand" href="#home"><span class="mark">S</span><span>startup<span style="color:#ff6b35">kolkata</span></span></a><span>Ideas into impact · Kolkata, India</span><span>© <span id="year"></span> Startup Kolkata</span></div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
